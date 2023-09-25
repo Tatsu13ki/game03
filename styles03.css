@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.room {
+    width: 100vw;
+    height: 100vh;
+    background: url('start.gif') no-repeat center center;
+    background-size: 50%; /* GIFの幅と高さを50%に変更 */
+    position: relative;
+    display: flex;
+}
+
+
+.fusuma {
+    width: 50%; /* 襖の初期幅 */
+    height: 100%;
+    background: linear-gradient(45deg, #ff3366, #6633ff); /* グラデーション背景 */
+    position: absolute;
+    top: 0;
+    transition: transform 1s; /* アニメーションの速さを調整 */
+    cursor: pointer;
+    border: 3px solid #cc00cc; /* ボーダー */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* 影 */
+    z-index: 2; /* 他の要素より前面に表示 */
+    font-family: 'Cursive', cursive; /* 装飾的なフォント */
+    color: #ffcc00; /* テキストの色 */
+    text-align: center; /* テキストを中央揃えに */
+    line-height: 2; /* テキストの行間を調整 */
+    padding: 20px; /* パディング */
+    transform: rotate(-10deg); /* 10度の回転 */
+    box-sizing: border-box; /* ボックスサイジングを調整 */
+    border-radius: 10px; /* 角丸 */
+}
+
+
+.left {
+    left: 0;
+    transform-origin: left center;
+}
+
+.right {
+    right: 0;
+    transform-origin: right center;
+}
+
+body {
+    background-color: #001; /* 背景色を黒に設定 */
+    margin: 0; /* 余白を削除 */
+    padding: 0; /* パディングを削除 */
+    overflow: hidden; /* スクロールバーを非表示にする（必要に応じて） */
+}

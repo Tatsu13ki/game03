@@ -44,9 +44,9 @@ body {
 
 .enemy {
     position: absolute;
-    width: 40px; /* 幅を調整 */
-    height: 40px; /* 高さを調整 */
-    background-image: url('enemy01.png'); /* 敵の画像ファイルのパス */
+    width: 60px; /* 幅を調整 */
+    height: 60px; /* 高さを調整 */
+    background-image: url('shape_star3.png'); /* 敵の画像ファイルのパス */
     background-size: cover; /* 画像を要素に合わせて拡大または縮小 */
     background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
 }

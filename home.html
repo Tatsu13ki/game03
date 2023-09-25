@@ -3,36 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Landing Page</title>
+    <title>Tatsuki Web Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        /* 見出しのスタイル */
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            font-weight: normal; /* Pacificoフォントには通常のフォントウェイトしかないため、normalを指定 */
+            color: #007BFF; /* テキストのカラーをカスタマイズ */
+            text-align: center; /* テキストの中央寄せ */
+        }
+        h2 {
+            font-family: 'Pacifico', cursive;
+            font-size: 30px;
+            font-weight: normal; /* Pacificoフォントには通常のフォントウェイトしかないため、normalを指定 */
+            color: #007BFF; /* テキストのカラーをカスタマイズ */
+            text-align: center; /* テキストの中央寄せ */
+        }
+    </style>
+        <style>
+            /* 全体のスタイル */
+            body {
+                font-family: 'Montserrat', sans-serif;
+                background-color: #f0f0f0;
+                padding: 25px;
+            }
+    
+            /* 枠線のスタイル */
+            .info-box {
+                border: 2px solid #007BFF; /* 枠線の色を指定 */
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 5px; /* 枠線の角を丸くする */
+            }
+    
+            /* テキストのスタイル */
+            p {
+                font-size: 26px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+    
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+    
+            li {
+                font-size: 25px;
+                margin-bottom: 8px;
+            }
+        </style>
     <link rel="stylesheet" href="styles01.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px 0;
+            border-radius: 10px 10px 0 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .game-info h2,
+        .start-game h2 {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .start-button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #start-button {
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            color: #000f;
+            font-size: 24px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #start-button:hover {
+            background-color: #000;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Game</h1>
-        <p>左右に移動して敵を避けるだけ！</p>
-    </header>
-    <main>
-        <section class="game-info">
-            <h2>About the Game</h2>
-            <p>素晴らしいゲーム体験を・・・</p>
-            <ul>
-                <li>３回当たるとゲームオーバー</li>
-                <li>操作方法　　←：左へ　　→：右へ</li>
-                <li>注）PCじゃないと動きません。いつかスマホにも実装します</li>
-            </ul>
-        </section>
-        <section class="start-game">
-            <h2>Ready to Play?</h2>
-            <p>クリックしてね!</p>
-            <!-- スタートボタンを画像にする -->
-            <div class="start-button-container">
-                <a href="float.html"><img id="start-button" src="start_button01.png" alt="Start Game"></a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Game Company. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    <div class="container">
+        <header>
+            <h1>Welcome to Tatsuki Web Site</h1>
+            <p>左右に移動して敵を避けるだけ！</p>
+        </header>
+        
+        <main>
+            <!-- ゲームについての情報 -->
+            <section class="game-info">
+                <h2>About the Game</h2>
+                <div class="info-box">
+                    <ul>
+                        <li>３回当たるとゲームオーバー</li>
+                        <li>操作方法　　←：左へ　　→：右へ</li>
+                        <li>注）PCじゃないと動きません。いつかスマホにも実装します</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- ゲームを始めるセクション -->
+            <section class="start-game">
+                <br></br><br></br>
+                <h2>Ready to Play?</h2>
+                <p>クリックしてね!</p>
+                <!-- スタートボタンを画像にする -->
+                <div class="start-button-container">
+                    <a href="float.html"><img id="start-button" src="start_button.png" alt="Start Game"></a>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2023 Tstsuki. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
